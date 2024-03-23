@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="Event" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+
+h1
+{
+  text-align: center;
+  color: #996515;
+  background-color: #efd4e2e9;
+  font-weight: Bold;
+  width: 100%;
+  height: 100px;
+  font-family: "Sofia", sans-serif;
+  font-size: 60px;
+  text-shadow: 3px 3px 3px #ababab;
+  position: relative;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("Login.jpg");
+
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.oval-button {
+  border: 80%; /* Sets the border radius to half of its width to create an oval shape */
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #04AA6D; /* Your desired background color */
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-start-end-radius: 10px;
+}
+
+/* Add a background color on hover */
+.oval-button:hover {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+
+<h1>
+  <img src="C:\Users\GUDIA\OneDrive\Desktop\SY Event Planners\logo-removebg-preview.jpg" alt="Logo" style= "float:left" width="100px" height="100px">SY EVENT PLANNERS
+</h1>
+
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <h2>Login</h2>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+    <a href="#" button type="Forgot password">Forgot password?</a>
+    <br><br>
+    <a href="C:\Users\GUDIA\OneDrive\Desktop\SY Event Planners\Website.html" button type="Login" button class="oval-button">Login</button>
+    </a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="C:\Users\GUDIA\OneDrive\Desktop\SY Event Planners\Signup.html" button type="Sign Up" button class="oval-button">Sign Up</button></a>
+    <br><br>
+  </form>
+</div>
+</body>
+</html>
